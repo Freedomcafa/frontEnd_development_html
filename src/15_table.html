@@ -1,0 +1,146 @@
+<!-- 表格学习 : 边框、标题、横纵、合并单元格、单元格嵌套、单元格边距-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>表格学习</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- 表格边框设置，边框宽度、内部单元格边距、外部单元格边距-->
+        <h1>这个表格有边框：</h1>
+        <table border="1" cellpadding="10" cellspacing="10">
+            <caption>这是一个2X3矩阵</caption>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+        </table>
+        <h1>这个表格没有边框：</h1>
+        <table border="0">
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+        </table>
+        <h1>这个表格也没有边框：</h1>
+        <table>
+            <tr>
+                <td>100</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>500</td>
+                <td>600</td>
+            </tr>
+        </table>
+
+        <!-- 表格横纵设置 -->
+        <h1>这是一个水平标题的表格：</h1>
+        <table border="1">
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>电话</th>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>男</td>
+                <td>122345</td>
+            </tr>
+            <tr>
+                <tb>张三今天提交了自己的信息</td>
+            </tr>
+        </table>
+
+        <h1>这是一个垂直标题的表格：</h1>
+        <table>
+            <tr>
+                <th>姓名</th>
+                <td>张三</td>
+            </tr>
+            <tr>
+                <th>性别</th>
+                <td>男</td>
+            </tr>
+            <tr>
+                <th>电话</th>
+                <td>122345</td>
+            </tr>
+        </table>
+
+        <h1>合并单元格</h1>
+        <table border="1">
+            <tr>
+                <th>姓名</th>
+                <th colspan="2">电话</th>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>1122334</td>
+                <td>2234455</td>
+            </tr>
+        </table>
+
+        <h1>合并单元格2</h1>
+        <table border="1">
+            <tr>
+                <th>姓名</th>
+                <td>张三</td>
+            </tr>
+            <tr>
+                <th rowspan="2">电话</th>
+                <td>1122334</td>
+            </tr>
+            <tr>
+                <td>2234455</td>
+            </tr>
+        </table>
+
+
+        <table border="1">
+            <tr>
+                <td>
+                    <p>这是一个段落</p>
+                    <p>这是另一个段落</p>
+                </td>
+                <td>这个单元格包含一个表格:
+                    <table border="1">
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>D</td>
+                        </tr>
+                    </table>
+              </td>
+            </tr>
+            <tr>
+                <td>这个单元格包含一个列表
+                    <ul>
+                        <li>apples</li>
+                        <li>bananas</li>
+                        <li>pineapples</li>
+                    </ul>
+                </td>
+                <td>HELLO</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

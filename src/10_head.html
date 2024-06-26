@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website浏览器标题</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="免费在线教程">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="runoob">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <base href="https://www.runoob.com/images/" target="_blank">
+    </head>
+
+    <body>
+        <p>浏览器显示了浏览器的标题，以及这个页面的正文内容。</p>
+        <p>所有 meta 标签显示在 head 部分...</p>
+        <img src="logo.png"> 
+        <p>- 注意这里我们设置了图片的相对地址。
+        能正常显示是因为我们在 head 部分设置了 base 标签，该标签指定了页面上所有链接的默认 URL，
+        所以该图片的访问地址为 "https://www.runoob.com/images/logo.png"</p>
+        <br><br>
+        <a href="https://www.runoob.com">菜鸟教程</a> 
+        <p>- 注意这个链接会在新窗口打开，即便它没有 target="_blank" 属性。
+        因为在 base 标签里我们已经设置了 target 属性的值为 "_blank"。</p>
+
+    </body>
+</html>
